@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+.pasekhome ul{
+    list-style-type: none;
+    background-color: rgb(75, 75, 75);
+    padding: 0px;
+    margin: 0px;
+}
+.pasekhome a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0px;
+    display:block;
+}
