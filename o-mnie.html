@@ -1,8 +1,27 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Oswald:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">    <body style="background-color: #0b0c10">
-        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Oswald:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">    <body style="background-color: #1f2833">
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  
+                    var checkbox = document.getElementById('darkmode-toggle');
+                    var body = document.getElementById('body');
+            
+                  
+                    checkbox.addEventListener('change', function () {
+                  
+                        if (checkbox.checked) {
+                  
+                            body.style.backgroundColor = '#242424';
+                        } else {
+                  
+                            body.style.backgroundColor = '#1f2833';
+                        }
+                    });
+                });
+            </script>
+        </head>
         <nav class="pasekhome">
             <ul>
                 <li><a href="index.html">STRONA GŁÓWNA</a></li>
@@ -23,5 +42,8 @@
         
             </div>
         </main>
+        <input type="checkbox" id="darkmode-toggle"/>
+        <label for="darkmode-toggle"></label>
+        <body style="background-color: #1f2833" id="body"></body>
     </body>
 </html>
